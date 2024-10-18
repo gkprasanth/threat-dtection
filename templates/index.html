@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Security Framework</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0 0 10px;
+            color: #555;
+        }
+
+        /* Header & Navbar Styles */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Styles */
+        section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            margin-bottom: 20px;
+        }
+
+        /* Card & Feature Styles */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card i {
+            font-size: 50px;
+            margin-bottom: 15px;
+            color: #1abc9c;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero-section {
+            background-color: #1abc9c;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SOC Security Framework</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <h1>Protect Your Business with the Best Security Solutions</h1>
+        <p>Empower your security operations with modern tools and automated workflows for enhanced threat detection and incident response.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-heading">About Us</h2>
+        <p>We help businesses safeguard their critical infrastructure with cutting-edge SOC technologies. Our team specializes in creating automated workflows to manage security threats effectively.</p>
+        <p>We believe in proactive monitoring and incident management to ensure uninterrupted business operations.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2 class="section-heading">Our Features</h2>
+        <div class="card-container">
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Splunk for Monitoring</h3>
+                <p>Get real-time visibility into logs and infrastructure metrics with Splunk’s powerful data analytics engine.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>XDR for Threat Detection</h3>
+                <p>Detect complex threats with XDR’s integrated detection methods across networks, endpoints, and cloud environments.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-robot"></i>
+                <h3>SOAR for Automated Response</h3>
+                <p>Automate responses to security incidents with SOAR and minimize downtime and manual effort.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2 class="section-heading">What Our Clients Say</h2>
+        <p>"SOC Security Framework has transformed the way we handle security incidents. Their tools are a game-changer!" - <strong>Jane Doe, CTO</strong></p>
+        <p>"The automation features are fantastic! We’ve saved countless hours with their SOAR solutions." - <strong>John Smith, Security Analyst</strong></p>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing">
+        <h2 class="section-heading">Pricing Plans</h2>
+        <ul>
+            <li><strong>Basic:</strong> Free for up to 10 users.</li>
+            <li><strong>Pro:</strong> $99/month with advanced analytics and 24/7 support.</li>
+            <li><strong>Enterprise:</strong> Contact us for custom pricing and tailored solutions.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-heading">Contact Us</h2>
+        <p>For more information, reach out to us at:</p>
+        <p>Email: <a href="mailto:support@socsecurity.com">support@socsecurity.com</a></p>
+        <p>Phone: +1 123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SOC Security Framework | <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
+
+</html>
